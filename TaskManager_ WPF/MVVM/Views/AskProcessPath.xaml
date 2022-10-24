@@ -57,7 +57,7 @@
                 </Grid.RowDefinitions>
 
                 <TextBox Height="50" Foreground="#edecef" Background="#38304c" Margin="10 20"  
-              Style="{StaticResource MaterialDesignOutlinedTextBox}" MaxLength="4"
+              Style="{StaticResource MaterialDesignOutlinedTextBox}"
                      TextChanged="ProcessPath_TextChanged"
                 materialDesign:HintAssist.Hint="Enter Path" materialDesign:HintAssist.Background="#38304c"  Name="ProcessPath" />
 
