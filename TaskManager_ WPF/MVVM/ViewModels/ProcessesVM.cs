@@ -90,6 +90,9 @@ namespace TaskManager__WPF.MVVM.ViewModels
 
             CheckProcesses();
 
+            Window.ProcessesListView.ItemsSource = null;
+            Window.ProcessesListView.ItemsSource = Processes;
+
             Window.TotalHandleCount.Text = TotalCount.TotalHandle.ToString();
             Window.TotalProcessesCount.Text = TotalCount.TotalProcess.ToString();
             Window.TotalThreadCount.Text = TotalCount.TotalThread.ToString();
