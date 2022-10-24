@@ -1,0 +1,106 @@
+﻿<Window x:Class="TaskManager__WPF.MVVM.Views.ConfigBlacklist"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TaskManager__WPF.MVVM.Views"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" WindowStartupLocation="CenterScreen"
+        Icon="https://res.cloudinary.com/kysbv/image/upload/v1663322828/General/options_icon.png"
+        WindowStyle="None" AllowsTransparency="True" Background="Transparent"
+        Title="Processes" Height="700" Width="1200">
+
+    <Border BorderThickness="0.3" CornerRadius="15" Background="{StaticResource MainDark_clr}">
+        <DockPanel>
+
+            <!--#region Title Bar-->
+            <Border Background="{StaticResource SecondDark_clr}" DockPanel.Dock="Top" CornerRadius="15 15 0 0" Height="25" MouseDown="Border_MouseDown">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width  ="45"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="25"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+
+                    <Image Grid.Column="0" Width="22" Height="22" HorizontalAlignment="Center" VerticalAlignment="Center"  Margin="20 0 0 0"
+                 Source="https://res.cloudinary.com/kysbv/image/upload/v1663322828/General/options_icon.png"/>
+
+                    <Label Grid.Column="1" Foreground="#f0f4fd" Margin="2 0"  FontWeight="SemiBold" Content="Configure Blacklist"/>
+
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 10 0">
+                        <Button Background="Transparent" BorderThickness="0" Width="40" Foreground="#f0f4fd" VerticalAlignment="Center" Content="_" Padding="0 0 0 8" Height="25" Click="ResizeButton_Click" 
+                         BorderBrush="{StaticResource MainLight_clr}"
+                         Style="{StaticResource MaterialDesignPaperSecondaryLightButton}" >
+
+
+                        </Button>
+
+                        <Button Background="Transparent" BorderThickness="0" Width="40" Height="25" Foreground="#f0f4fd" FontSize="10" VerticalAlignment="Center" Content="X" FontWeight="Bold" Click="ResizeButton_Click"
+                        BorderBrush="{StaticResource Red_clr}"
+                         Style="{StaticResource MaterialDesignPaperSecondaryLightButton}"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <!--#endregion-->
+
+            <!--#region App-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid Background="{StaticResource MainDark_clr}" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="110"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Button  Margin="0" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignPaperSecondaryLightButton}" Height="35" Background="Transparent" Name="AddBlackList" 
+                      Command="{Binding AddBlackListCommand}" Padding="0" IsEnabled="True" Opacity="1" BorderThickness="0" Cursor="Hand" BorderBrush="{StaticResource SecondLight_clr}"
+                      materialDesign:ButtonAssist.CornerRadius="5" Width="70">
+                        <StackPanel Orientation="Horizontal" Opacity="1">
+                            <materialDesign:PackIcon Kind="BookPlus" Width="20" Height="20" Margin="5 0"
+                        VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#c7c7c7"/>
+
+                            <Label Content="Add" Foreground="#c7c7c7" Opacity="1" FontSize="16"
+                         FontFamily="Segoe UI Black" FontWeight="DemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+
+                    <Button  Margin="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource MaterialDesignPaperSecondaryLightButton}" Height="35" Background="Transparent" Name="EndTask" 
+                     Command="{Binding DeleteBlackListCommand}" Padding="0" IsEnabled="True" Opacity="1" BorderThickness="0" Cursor="Hand" BorderBrush="{StaticResource SecondLight_clr}"
+                      materialDesign:ButtonAssist.CornerRadius="5" Width="100">
+                        <StackPanel Orientation="Horizontal" Opacity="1">
+                            <materialDesign:PackIcon Kind="Cancel" Width="20" Height="20" Margin="5 0"
+                        VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#c7c7c7"/>
+
+                            <Label Content="Delete" Foreground="#c7c7c7" Opacity="1" FontSize="16"
+                         FontFamily="Segoe UI Black" FontWeight="DemiBold"/>
+                        </StackPanel>
+                    </Button>
+
+                </Grid>
+
+                <ListView SelectionMode="Extended" DockPanel.Dock="Top"  Margin="20" Padding="0 10" Grid.Row="1" Name="BlacklistListView" Height="500"  Foreground="White" Width="1000"
+                    HorizontalAlignment="Center" VerticalAlignment="Top"/>
+
+
+            </Grid>
+
+            <!--#endregion-->
+
+        </DockPanel>
+    </Border>
+
+</Window>
