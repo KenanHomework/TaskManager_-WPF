@@ -54,7 +54,7 @@
 
                             <Label Content="Name" Grid.Column="1" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" HorizontalAlignment="Center" Height="20" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                            <TextBlock Text="{Binding Name,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="Aqua" FontSize="15" FontFamily="Lucida Console" Grid.Column="1"
+                            <TextBlock Text="{Binding Name,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console" Grid.Column="1"
                                 Grid.Row="1" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy"
                                 Margin="0 5 0 0"/>
 
@@ -64,7 +64,7 @@
 
                             <Label Content="Path" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                            <TextBlock Text="{Binding Path,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="Aqua" FontSize="15" FontFamily="Lucida Console"
+                            <TextBlock Text="{Binding Path,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console"
                                 Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy" 
                                 Margin="0 5 0 0" Grid.Column="2"/>
 
@@ -74,7 +74,7 @@
 
                             <Label Content="HandleCount" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" Grid.Column="3" HorizontalAlignment="Center" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                            <TextBlock Text="{Binding HandleCount,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="Aqua" FontSize="15" FontFamily="Lucida Console"
+                            <TextBlock Text="{Binding HandleCount,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console"
                                 Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy" 
                                 Margin="0 5 0 0" Grid.Column="3"/>
 
@@ -84,7 +84,7 @@
 
                             <Label Content="ThreadCount" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" Grid.Column="4" HorizontalAlignment="Center" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                            <TextBlock Text="{Binding ThreadCount,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="Aqua" FontSize="15" FontFamily="Lucida Console"
+                            <TextBlock Text="{Binding ThreadCount,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console"
                                 Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy" 
                                 Margin="0 5 0 0" Grid.Column="4"/>
 

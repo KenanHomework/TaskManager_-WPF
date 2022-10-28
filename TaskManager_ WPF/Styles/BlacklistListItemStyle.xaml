@@ -28,7 +28,7 @@
                         <StackPanel>
                             <Label Content="Path" Grid.Column="1" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" HorizontalAlignment="Center" Height="20" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                            <TextBlock  Foreground="Aqua" FontSize="15" FontFamily="Lucida Console" Grid.Column="1"
+                            <TextBlock  Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console" Grid.Column="1"
                                 Grid.Row="1" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy"
                                 Margin="0 5 0 0"/>
 

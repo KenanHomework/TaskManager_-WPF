@@ -74,7 +74,7 @@
 
                     <Label Content="Total Processes Count" Grid.Column="0" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" HorizontalAlignment="Center" Height="20" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                    <TextBlock Text="{Binding TotalCount.TotalProcess,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="Aqua" FontSize="15" FontFamily="Lucida Console" Grid.Column="0"
+                    <TextBlock Text="{Binding TotalCount.TotalProcess,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console" Grid.Column="0"
                                 Grid.Row="1" TextAlignment="Center"  VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy"
                                 Margin="0 5 0 0" Name="TotalProcessesCount"/>
 
@@ -84,7 +84,7 @@
 
                     <Label Content="Total Thread Count" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" Grid.Column="1" HorizontalAlignment="Center" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                    <TextBlock Text="{Binding TotalCount.TotalThread,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="Aqua" FontSize="15" FontFamily="Lucida Console"
+                    <TextBlock Text="{Binding TotalCount.TotalThread,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console"
                                 Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy" 
                                 Margin="0 5 0 0" Grid.Column="1" Name="TotalThreadCount"/>
 
@@ -94,7 +94,7 @@
 
                     <Label Content="Total Handle Count" Foreground="#60686c" FontSize="10" FontFamily="Lucida Console" Grid.Row="1"  VerticalAlignment="Top" Grid.Column="2" HorizontalAlignment="Center" FontWeight="Heavy" Margin="0 5 0 0"/>
 
-                    <TextBlock Text="{Binding TotalCount.TotalHandle,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="Aqua" FontSize="15" FontFamily="Lucida Console"
+                    <TextBlock Text="{Binding TotalCount.TotalHandle,Mode=OneWay,UpdateSourceTrigger=PropertyChanged}" Foreground="#f8f9fd" FontSize="15" FontFamily="Lucida Console"
                                 Grid.Row="1" TextAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" FontWeight="Heavy" 
                                 Margin="0 5 0 0" Grid.Column="2" Name="TotalHandleCount"/>
 
