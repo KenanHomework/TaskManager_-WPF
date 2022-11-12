@@ -33,7 +33,7 @@ namespace TaskManager__WPF.MVVM.Views
 
             dispatcherTimer = new DispatcherTimer();
             dispatcherTimer.Tick += new EventHandler(RefreshTimer_Tick);
-            dispatcherTimer.Interval = new TimeSpan(0, 0, 10);
+            dispatcherTimer.Interval = new TimeSpan(0, 0, 2);
             dispatcherTimer.Start();
         }
         public DispatcherTimer dispatcherTimer = new DispatcherTimer();
